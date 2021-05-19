@@ -145,7 +145,7 @@ async def kang(args):
                 await conv.get_response()
                 await bot.send_read_acknowledge(conv.chat_id)
         else:
-            await args.edit("Тут должен был быть аргемент про стикерпак и тп, но мне лень писать - крч создай новый")
+            await args.edit("Тут должен был быть аргемент про стикерпак и тп, но мне лень писать - крч создаю новый. Мур")
             async with bot.conversation('Stickers') as conv:
                 await conv.send_message(cmd)
                 await conv.get_response()
