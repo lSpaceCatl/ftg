@@ -9,8 +9,8 @@ def register(cb):
 
 
 @loader.tds
-class tgall(loader.Module):
-	"""tgall"""
+class TagAll(loader.Module):
+	"""TgAll"""
 	strings = {
 		"name": "tgall", "miay": "SpaceCat"
 	}
