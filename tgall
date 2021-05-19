@@ -24,7 +24,7 @@ class TagAll(loader.Module):
 		
 	
 	@loader.sudo
-	async def tagallcmd(self, message):
+	async def tgallcmd(self, message):
 		args = utils.get_args(message)
 		tag_ = 100
 		notext = False
