@@ -11,8 +11,8 @@ from .. import loader, utils
 
 
 @loader.tds
-class YouTubeDownloadeMod(loader.Module):
- """YoutubeDownloade Module"""
+class YouTubeDownMod(loader.Module):
+ """YoutubeDown Module"""
  strings = {
   "name": "Youtube-Dl",
   "preparing": "<b>[YouTube-Dl]</b> Поиск",
