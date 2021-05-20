@@ -5,7 +5,7 @@
 
 if [ ! -n "$BASH" ]; then
 	echo "Non-bash shell detected, fixing..."
-	bash -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://github.com/GeekTG/Friendly-Telegram/raw/master/install.sh) '"$*"
+	bash -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://raw.githubusercontent.com/lSpaceCatl/ftg/Install-FTG/install.sh) '"$*"
 	exit $?
 fi
 
@@ -131,7 +131,7 @@ if echo "$OSTYPE" | grep -qE '^linux-gnu.*' && [ -f '/etc/debian_version' ]; the
 		if command -v sudo >/dev/null; then
 			endspin "Restarting as root..."
 			echo "Relaunching" >>ftg-install.log
-			sudo "$BASH" -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://github.com/GeekTG/Friendly-Telegram/raw/master/install.sh) '"$*"
+			sudo "$BASH" -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://raw.githubusercontent.com/lSpaceCatl/ftg/Install-FTG/install.sh) '"$*"
 			exit $?
 		else
 			PKGMGR="true"
@@ -148,7 +148,7 @@ elif echo "$OSTYPE" | grep -qE '^linux-gnu.*' && [ -f '/etc/arch-release' ]; the
 		if command -v sudo >/dev/null; then
 			endspin "Restarting as root..."
 			echo "Relaunching" >>ftg-install.log
-			sudo "$BASH" -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://github.com/GeekTG/Friendly-Telegram/raw/master/install.sh) '"$*"
+			sudo "$BASH" -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://raw.githubusercontent.com/lSpaceCatl/ftg/Install-FTG/install.sh) '"$*"
 			exit $?
 		else
 			PKGMGR="true"
@@ -166,7 +166,7 @@ elif echo "$OSTYPE" | grep -qE '^darwin.*'; then
 	PKGMGR="brew install"
 	PYVER="3"
 else
-	endspin "Unrecognised OS. Please follow https://Friendly-Telegram.gitlab.io/installing_advanced"
+	endspin "Unrecognised OS."
 	exit 1
 fi
 
@@ -201,7 +201,7 @@ fi
 # shellcheck disable=SC2086
 ${SUDO_CMD}rm -rf Friendly-Telegram
 # shellcheck disable=SC2086
-runout ${SUDO_CMD}git clone https://github.com/GeekTG/Friendly-Telegram || {
+runout ${SUDO_CMD}git clone https://github.com/lSpaceCatl/ftg/tree/Install-FTG || {
 	errorout "Clone failed."
 	exit 3
 }
