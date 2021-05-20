@@ -6,6 +6,6 @@ class HeartsMod(loader.Module):
 	@loader.owner
 	async def heartscmd(self, message):
 		for _ in range(10):
-			for heart in ['❤', '️🧡', '💛', '💚', '💙', '💜', '', '懶', '癩']:
+			for heart in ['❤', '️🧡', '💛', '💚', '💙', '💜']:
 				await message.edit(heart)
 				await sleep(0.3)
