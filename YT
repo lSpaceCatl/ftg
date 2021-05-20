@@ -12,7 +12,7 @@ from .. import loader, utils
 
 @loader.tds
 class YtDownMod(loader.Module):
- """Youtube-Down Module"""
+ """Youtube-Dl Module"""
  strings = {
   "name": "Youtube-Dl",
   "preparing": "<b>[YouTube-Dl]</b> Обработка",
