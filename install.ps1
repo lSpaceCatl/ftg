@@ -1,5 +1,5 @@
 #    Friendly Telegram Userbot
-#    by GeekTG Team
+
 
 if (Test-Path "Friendly-Telegram" -PathType Container)
 {
