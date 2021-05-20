@@ -1,0 +1,21 @@
+# Telegram connection
+git+https://github.com/GeekTG/Telethon.git@v1.21.1-mod
+
+# Config
+pythondialog==3.5.1
+
+# Heroku & Updater
+heroku3==4.2.3
+gitpython==3.1.17
+
+# Translations
+babel==2.9.1
+
+# Eval
+meval==2.5
+
+# Web
+aiohttp_jinja2==1.4.2
+
+# Speedtest
+speedtest-cli==2.1.3
