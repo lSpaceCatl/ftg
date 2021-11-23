@@ -130,7 +130,7 @@ async def kang(args):
                         await conv.get_response()
                         await bot.send_read_acknowledge(conv.chat_id)
                         await args.edit(
-                            f"Стикер добавлен в ахуенный пак. Пак создан сейчас. Можешь его найти тут [here](t.me/addstickers/{packname})",
+                            f"Стикер добавлен в ахуенный пак. Пак создан сейчас. Можешь его найти [тут](t.me/addstickers/{packname})",
                             parse_mode='md')
                         return
                 if is_anim:
@@ -180,7 +180,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            f"Стикер добавлен. Пак тута. Мур [here](t.me/addstickers/{packname})",
+            f"Стикер добавлен. Пак тута. [Мур](t.me/addstickers/{packname})",
             parse_mode='md')
 
 
